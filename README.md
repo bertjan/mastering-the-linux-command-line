@@ -99,8 +99,7 @@ Productivity
 - Profile / .bash_profile
 - aliases
 - diff
-- ctrl-a ctrl-e
-- Ctrl-l
+- ctrl-a ctrl-e ctrl-l ctrl-d
 - Env vars, functions, export
 - More, less, shift-f
 - screen
