@@ -1,11 +1,11 @@
 # mastering-the-linux-command-line
-Material for presentation "Mastering the Linux command line".
-
-TODO: https://github.com/bertjan/mastering-the-linux-command-line
+Material for presentation "Mastering the Linux command line".  
+Read along with `git clone https://github.com/bertjan/mastering-the-linux-command-line`
 
 Opening slides
 ---
 
+Title:
 ```
 clear
 printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..57} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..56} && printf "bertjan@openvalue.nl\n\n"
@@ -26,7 +26,6 @@ NLJUG logo:
 jp2a https://yt3.ggpht.com/a/AGF-l79fDOsea1hkt8MMeKetvpDDE7qSlRfsKNaJQw=s288-mo-c-c0xffffffff-rj-k-no -i
 ```
 
-
 Outline
 ---
 - Introduction
@@ -37,7 +36,6 @@ Outline
 - Productivity
 - Pipes
 - System analysis
-- System administration
 - Shell scripting
 - Questions
 
@@ -45,14 +43,14 @@ Outline
 Introduction
 ---
 - What’s Linux?
-- Kernel vs Distro
+- Kernel vs distro
 - Terminal session vs shell
-- File system structure (folders, dot file)
 
 Navigating
 ---
 - pwd
 - cd, ls, cd -  
+- File system structure (folders, dot file)
 - Tab completion  
 - find & find - exec
 - locate
@@ -65,11 +63,9 @@ History
 
 File processing
 ---
-- touch
 - cp, mv, ln
 - mkdir, mkdir -p
-- type, which
-- file
+- type, which, file
 - diff
 - tar, gzip
 - vi
@@ -82,25 +78,22 @@ Networking
 ssh 192.168.1.32 -L8080:www.google.nl:80
 wget -O - localhost:8080/ --header "Host: www.google.nl"
 ```
-
 - ifconfig
 - ping
 - scp, sftp
-- telnet, nc
-- host, traceroute   
-- curl, wget
-- redir (`redir -n localhost:8080 www.google.nl:80`)
+- telnet
+- wget / curl
 - rsync
 
 Productivity
 ---
 - cal
 - bc
-- Profile / .bash_profile
+- .profile / .bash_profile
 - aliases
 - ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
-- Env vars, export
-- More, less, shift-f, shift-g
+- env vars, export
+- more, less
 - screen
 - zcat, zless 
 - man -h —help
@@ -109,7 +102,7 @@ Productivity
 
 Pipes
 ---
-- cat,  cut, grep
+- cat, cut, grep
 - xargs
 - tee 
 - for (…) 
@@ -125,35 +118,24 @@ Pipes
 System analysis
 ---
 - ps
-- pstree
-- top
-- strace (`strace -p <vi pi> 2>&1 | grep read)`)
+- top (`dd if=/dev/urandom | bzip2 -9 >> /dev/null`)
+- strace (`strace -p <vi pid> 2>&1 | grep read`)
 - vmstat
 - netstat
 - lsof
 - du en df
-- Which process uses: this file, this port
-- dd if=/dev/urandom | bzip2 -9 >> /dev/null
-
-System administration
----
-- sudo vs su
-- apt / yum
-- permissions, chmod, chown
-- wall
-- rc.local & startup scripts
 
 Shell scripting
 ---
-- hashbang / shebang
+- intro
 - variables
 - If/then/else
-- functions - function test1 { echo test; }
-- command line args
-- Bats: Bash Automated Testing System
+- functions (`function test1 { echo test; }`)
+- Command line args
 
 Bonus
 ---
+- Bats: Bash Automated Testing System
 - telnet towel.blinkenlights.nl
 - What's this:  `:(){ :|:& };:`
 
