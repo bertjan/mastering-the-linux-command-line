@@ -1,6 +1,7 @@
 # mastering-the-linux-command-line
 Material for presentation "Mastering the Linux command line".
 
+TODO: https://github.com/bertjan/mastering-the-linux-command-line
 
 Opening slides
 ---
@@ -53,8 +54,6 @@ Navigating
 - pwd
 - cd, ls, cd -  
 - Tab completion  
-- mkdir, mkdir -p
-- touch
 - find & find - exec
 - locate
 
@@ -66,30 +65,31 @@ History
 
 File processing
 ---
+- touch
 - cp, mv, ln
 - mkdir, mkdir -p
-- ln
-- touch
-- type
+- type, which
 - file
 - diff
-- tar, gzip, bzip
+- tar, gzip
 - vi
 
 
 Networking
 ---
 - Ssh, Ssh keys, ssh-copy-id, ssh tunneling
+```
+ssh 192.168.1.32 -L8080:www.google.nl:80
+wget -O - localhost:8080/ --header "Host: www.google.nl"
+```
+
 - ifconfig
 - ping
 - scp, sftp
-- telnet
-- traceroute, host  
+- telnet, nc
+- host, traceroute   
 - curl, wget
-- nc
-- telnet (telnet towel.blinkenlights.nl)
-- redir
-- ifconfig  
+- redir (`redir -n localhost:8080 www.google.nl:80`)
 - rsync
 
 Productivity
@@ -98,14 +98,12 @@ Productivity
 - bc
 - Profile / .bash_profile
 - aliases
-- diff
-- ctrl-a ctrl-e ctrl-l ctrl-d
-- Env vars, functions, export
-- More, less, shift-f
+- ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
+- Env vars, export
+- More, less, shift-f, shift-g
 - screen
 - zcat, zless 
 - man -h —help
-- Ctrl-z, bg fg
 - Brace expansion
 - Watch
 
@@ -129,7 +127,7 @@ System analysis
 - ps
 - pstree
 - top
-- strace
+- strace (`strace -p <vi pi> 2>&1 | grep read)`)
 - vmstat
 - netstat
 - lsof
@@ -156,6 +154,7 @@ Shell scripting
 
 Bonus
 ---
+- telnet towel.blinkenlights.nl
 - What's this:  `:(){ :|:& };:`
 
 Questions?
