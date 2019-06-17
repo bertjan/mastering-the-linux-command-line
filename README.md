@@ -1,5 +1,5 @@
 # mastering-the-linux-command-line
-Material for presentation "Mastering the Linux command line".  
+Material for talk "Mastering the Linux command line".  
 Read along with `git clone https://github.com/bertjan/mastering-the-linux-command-line`
 
 Opening slides
@@ -11,48 +11,30 @@ clear
 printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..57} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..56} && printf "bertjan@openvalue.nl\n\n"
 ```
 
-Profile picture:
-```
-jp2a https://pbs.twimg.com/profile_images/1056994211499786240/qqhVN-Ur_400x400.jpg
-```
+Intro:
 
-OpenValue logo:
 ```
-wget -q -O - https://www.openvalue.nl/images/openvalue-white.png | convert - jpg:- | jp2a -
+(jp2a https://pbs.twimg.com/profile_images/1056994211499786240/qqhVN-Ur_400x400.jpg \
+&& echo && echo \
+&& wget -q -O - https://www.openvalue.nl/images/openvalue-white.png | convert - jpg:- | jp2a - \
+&& echo && echo \
+&& jp2a https://yt3.ggpht.com/a/AGF-l79fDOsea1hkt8MMeKetvpDDE7qSlRfsKNaJQw=s288-mo-c-c0xffffffff-rj-k-no -i) | less
 ```
-
-NLJUG logo:
-```
-jp2a https://yt3.ggpht.com/a/AGF-l79fDOsea1hkt8MMeKetvpDDE7qSlRfsKNaJQw=s288-mo-c-c0xffffffff-rj-k-no -i
-```
-
-Outline
----
-- Introduction
-- Navigating
-- History
-- File processing
-- Networking
-- Productivity
-- Pipes
-- System analysis
-- Shell scripting
-- Questions
 
 
 Introduction
 ---
-- What’s Linux?
-- Kernel vs distro
-- Terminal session vs shell
+Assumption: you know the basics like `cd`, `ls`, `cp`, `mv`.
+- Terminal session, shell, bash
+- man ,-h, --help
+- pipes: intro
 
 Navigating
 ---
 - pwd
-- cd, ls, cd -  
-- File system structure (folders, dot file)
-- Tab completion  
-- find & find - exec
+- cd -  
+- tab completion  
+- find
 - locate
 
 History
@@ -63,17 +45,13 @@ History
 
 File processing
 ---
-- cp, mv, ln
-- mkdir, mkdir -p
-- type, which, file
+- which, file
 - diff
-- tar, gzip
 - vi
-
 
 Networking
 ---
-- Ssh, Ssh keys, ssh-copy-id, ssh tunneling
+- ssh key authentication, ssh-copy-id, ssh tunneling
 ```
 ssh 192.168.1.32 -L8080:www.google.nl:80
 wget -O - localhost:8080/ --header "Host: www.google.nl"
@@ -81,38 +59,33 @@ wget -O - localhost:8080/ --header "Host: www.google.nl"
 - ifconfig
 - ping
 - scp, sftp
-- telnet
-- wget / curl
 - rsync
+- telnet
+- curl
 
 Productivity
 ---
 - cal
 - bc
-- .profile / .bash_profile
+- .profile
 - aliases
 - ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
-- env vars, export
-- more, less
+- less shift-g shift-f
+- brace expansion
 - screen
-- zcat, zless 
-- man -h —help
-- Brace expansion
-- Watch
+- watch
 
 Pipes
 ---
-- cat, cut, grep
-- xargs
-- tee 
-- for (…) 
-- seq
+- cat, grep, awk, cut
 - sort, uniq
+- tee 
+- seq
 - command substitution $(..)
 - head, tail (-f)
 - wc
-- awk, sed
-- ; & &&
+- sed
+- ; vs &&
 - Output redirection > >> 2>&1
 
 System analysis
@@ -123,11 +96,11 @@ System analysis
 - vmstat
 - netstat
 - lsof
-- du en df
+- du 
 
 Shell scripting
 ---
-- intro
+- intro, make executable
 - variables
 - If/then/else
 - functions (`function test1 { echo test; }`)
@@ -136,9 +109,13 @@ Shell scripting
 Bonus
 ---
 - Bats: Bash Automated Testing System
-- telnet towel.blinkenlights.nl
 - What's this:  `:(){ :|:& };:`
+- telnet towel.blinkenlights.nl
 
 Questions?
 ---
 Hit me!
+
+Thanks!
+---
+'Slides' are at https://github.com/bertjan.
