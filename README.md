@@ -22,11 +22,14 @@ Intro:
 ```
 
 
+
+
 Introduction
 ---
 Assumption: you know the basics like `cd`, `ls`, `cp`, `mv`.
+
 - Terminal session, shell, bash
-- man ,-h, --help
+- man, help, -h, --help
 - pipes: intro
 
 Navigating
@@ -52,10 +55,6 @@ File processing
 Networking
 ---
 - ssh key authentication, ssh-copy-id, ssh tunneling
-```
-ssh 192.168.1.32 -L8080:www.google.nl:80
-wget -O - localhost:8080/ --header "Host: www.google.nl"
-```
 - ifconfig
 - ping
 - scp, sftp
@@ -102,9 +101,10 @@ Shell scripting
 ---
 - intro, make executable
 - variables
+- Command line args
 - If/then/else
 - functions (`function test1 { echo test; }`)
-- Command line args
+
 
 Bonus
 ---
