@@ -8,11 +8,10 @@ Opening slides
 Title:
 ```
 clear
-printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..57} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..56} && printf "bertjan@openvalue.nl\n\n"
+printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..49} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..48} && printf "bertjan@openvalue.nl\n" && printf '%0.1s' ' '{1..52} && printf "@bjschrijver\n\n"
 ```
 
 Intro:
-
 ```
 (jp2a https://pbs.twimg.com/profile_images/1056994211499786240/qqhVN-Ur_400x400.jpg \
 && echo && echo \
@@ -34,11 +33,11 @@ Assumption: you know the basics like `cd`, `ls`, `cp`, `mv`.
 
 Navigating
 ---
-- pwd
-- cd -  
 - tab completion  
+- cd -  
 - find
 - locate
+- which
 
 History
 ---
@@ -48,7 +47,7 @@ History
 
 File processing
 ---
-- which, file
+- file
 - diff
 - vi
 
@@ -57,10 +56,10 @@ Networking
 - ssh key authentication, ssh-copy-id, ssh tunneling
 - ifconfig
 - ping
-- scp, sftp
-- rsync
 - telnet
 - curl
+- scp, sftp
+- rsync
 
 Productivity
 ---
@@ -71,25 +70,24 @@ Productivity
 - ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
 - less shift-g shift-f
 - brace expansion
-- screen
 - watch
+- screen
 
 Pipes
 ---
+- tee
+- head, tail (-f)
 - cat, grep, awk, cut
 - sort, uniq
-- tee 
-- seq
+(`cat demo-app.log | grep "Received \[GET " | awk {'print $11'} | sort | uniq -c`)
 - command substitution $(..)
-- head, tail (-f)
 - wc
 - sed
 - ; vs &&
-- Output redirection > >> 2>&1
+- Output redirection > >>
 
 System analysis
 ---
-- ps
 - top (`dd if=/dev/urandom | bzip2 -9 >> /dev/null`)
 - strace (`strace -p <vi pid> 2>&1 | grep read`)
 - vmstat
@@ -119,3 +117,4 @@ Hit me!
 Thanks!
 ---
 'Slides' are at https://github.com/bertjan.
+Questions? @bjschrijver on Twitter.
