@@ -109,6 +109,7 @@ Bonus
 - Bats: Bash Automated Testing System
 - What's this:  `:(){ :|:& };:`
 - telnet towel.blinkenlights.nl
+- telnet mapscii.me
 
 Questions?
 ---
