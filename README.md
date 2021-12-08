@@ -54,7 +54,7 @@ File processing
 Networking
 ---
 - ssh key authentication, ssh-copy-id, ssh tunneling
-- ifconfig
+- ~~ifconfig~~ (deprecated)  -> ip
 - ping
 - telnet
 - curl
