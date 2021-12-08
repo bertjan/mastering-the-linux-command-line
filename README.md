@@ -15,7 +15,7 @@ Intro:
 ```
 (jp2a https://pbs.twimg.com/profile_images/1056994211499786240/qqhVN-Ur_400x400.jpg \
 && echo && echo \
-&& wget -q -O - https://www.openvalue.nl/images/openvalue-white.png | convert - jpg:- | jp2a - \
+&& wget -q -O - https://www.openvalue.nl/images/openvalue-white.jpg | jp2a - \
 && echo && echo \
 && jp2a https://yt3.ggpht.com/a/AGF-l79fDOsea1hkt8MMeKetvpDDE7qSlRfsKNaJQw=s288-mo-c-c0xffffffff-rj-k-no -i) | less
 ```
