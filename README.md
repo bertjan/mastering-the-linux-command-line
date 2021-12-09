@@ -69,7 +69,7 @@ Productivity
 - aliases
 - ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
 - less shift-g shift-f
-- brace expansion: `echo a{d,c,b}e`
+- brace expansion: `echo a{d,c,b}e` , `echo test{1..10}`
 - watch
 - screen
 
