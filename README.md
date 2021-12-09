@@ -92,7 +92,7 @@ System analysis
 - strace (`strace -p <vi pid> 2>&1 | grep read`)
 - vmstat
 - netstat
-- lsof
+- lsof - `lsof -i :8080`
 - du 
 
 Shell scripting
