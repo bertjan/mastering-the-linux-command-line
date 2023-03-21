@@ -79,7 +79,7 @@ Pipes
 - head, tail (-f)
 - cat, grep, awk, cut
 - sort, uniq
-(`watch -n 1 "cat app.log | grep DispatcherServlet | grep ': GET' | cut -d ':' -f 4- | sort | uniq -c"`)
+(`watch -n 0.1 "cat app.log | grep DispatcherServlet | grep ': GET' | cut -d ':' -f 4- | sort | uniq -c"`)
 - command substitution $(..)
 - wc
 - sed
