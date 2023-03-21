@@ -1,6 +1,6 @@
 # mastering-the-linux-command-line
 Material for talk "Mastering the Linux command line".  
-Read along with `git clone https://github.com/bertjan/mastering-the-linux-command-line`
+Read along with `git clone https://github.com/bertjan/mastering-the-linux-command-line` or at https://github.com/bertjan/mastering-the-linux-command-line.
 
 Opening slides
 ---
