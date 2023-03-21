@@ -101,7 +101,7 @@ Shell scripting
 - variables
 - Command line args
 - If/then/else
-- functions (`function test1 { echo test; }`)
+- functions (`function test1 { echo test $1; }`)
 
 
 Bonus
