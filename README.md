@@ -8,7 +8,7 @@ Opening slides
 Title:
 ```
 clear
-printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..49} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..48} && printf "bertjan@openvalue.nl\n" && printf '%0.1s' ' '{1..52} && printf "@bjschrijver\n\n"
+printf "\n\n"; printf "Mastering\nthe\nLinux command line" | figlet -ctk; printf "\n\n"; printf '%0.1s' ' '{1..49} && printf "Bert Jan Schrijver\n\n" && printf '%0.1s' ' '{1..48} && printf "bertjan@openvalue.eu\n" && printf '%0.1s' ' '{1..52} && printf "@bjschrijver\n\n"
 ```
 
 Intro:
