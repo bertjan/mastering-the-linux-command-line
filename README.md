@@ -89,7 +89,7 @@ Pipes
 System analysis
 ---
 - top (`dd if=/dev/urandom | bzip2 -9 >> /dev/null`)
-- strace (`strace -p <vi pid> 2>&1 | grep read`)
+- strace (`sudo strace -p $(pidof vi) 2>&1 | grep read`)
 - vmstat
 - netstat
 - lsof - `lsof -i :8080`
