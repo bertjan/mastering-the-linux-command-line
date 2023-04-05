@@ -21,6 +21,10 @@ Intro:
 ```
 
 
+Special intro for April 5th only:
+```
+jp2a https://www.expandior.nl/wp-content/uploads/2021/03/Frank-Walinga-e1618911733788.jpg
+```
 
 
 Introduction
