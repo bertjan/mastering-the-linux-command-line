@@ -48,25 +48,24 @@ File processing
 ---
 - file
 - diff (--side-by-side --color)
---- from here ---
-- vi
+- vi (i, :q, :wq, /)
 
 Networking
 ---
-- ssh key authentication, ssh-copy-id, ssh tunneling
+- ssh key authentication, ssh-copy-id, ssh tunneling (ssh 192.168.68.3 -L8080:localhost:8080)
 - ~~ifconfig~~ (deprecated)  -> ip
 - ping
 - telnet
 - curl
-- scp, sftp
-- rsync
+- sftp, scp (both file and dir: scp -r testdir bertjan@192.168.68.3:~/testdir)
+- rsync (rsync -r testdir/ bertjan@192.168.68.3:~/testdir)
 
 Productivity
 ---
 - cal
-- bc
+- bc (scale, use in scripts)
 - .profile
-- aliases
+- aliases (alias gp="git pull" & use in .profile)
 - ctrl-a ctrl-e ctrl-l ctrl-d ctrl-c
 - less shift-g shift-f
 - brace expansion: `echo a{d,c,b}e` , `echo test{1..10}`
@@ -91,8 +90,8 @@ System analysis
 - top (`dd if=/dev/urandom | bzip2 -9 >> /dev/null`)
 - strace (`sudo strace -p $(pidof vi) 2>&1 | grep read`)
 - vmstat
-- netstat
-- lsof - `lsof -i :8080`
+- netstat (-pant)
+- lsof (`lsof -i :8080` , `lsof demo-app.log`)
 - du 
 
 Shell scripting
