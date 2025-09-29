@@ -17,13 +17,7 @@ Intro:
 && echo && echo \
 && wget -q -O - https://www.openvalue.nl/images/openvalue-white.jpg | jp2a - \
 && echo && echo \
-&& jp2a https://yt3.ggpht.com/a/AGF-l79fDOsea1hkt8MMeKetvpDDE7qSlRfsKNaJQw=s288-mo-c-c0xffffffff-rj-k-no -i) | less
-```
-
-
-Special intro for April 5th only:
-```
-jp2a https://www.expandior.nl/wp-content/uploads/2021/03/Frank-Walinga-e1618911733788.jpg
+&& jp2a https://cdn.bsky.app/img/avatar/plain/did:plc:afctx44qkzvqmqsx4yk5uryd/bafkreig7xutbbqdl5qh42szlgzdjec6vihm7gnplh6ckbnokvlpymspsu4@jpeg -i) | less
 ```
 
 
@@ -31,28 +25,30 @@ Introduction
 ---
 Assumption: you know the basics like `cd`, `ls`, `cp`, `mv`.
 
-- Terminal session, shell, bash
-- man, help, -h, --help
-- pipes: intro
+- Terminal session (local or remote), kernel, shell, bash
+- man, help, -h, --help (for example: `ps` has a man page, `cd` doesnt but it does have a help page. help is bash ony)
+- pipes: intro (for example: echo test123 | rev)
+
 
 Navigating
 ---
 - tab completion  
 - cd -  
-- find
-- locate
-- which
+- find (-size -exec)
+- locate & updatedb
+- which (for example: which npm)
 
 History
 ---
 - up arrow
-- history, !! and !<number>
-- ctrl-r
+- history, !! and !<number> (for example: sudo !!)
+- ctrl-r (you can press it repeatedly)
 
 File processing
 ---
 - file
-- diff
+- diff (--side-by-side --color)
+--- from here ---
 - vi
 
 Networking
